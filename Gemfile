@@ -31,6 +31,9 @@ group :development, :test do
   gem 'rspec-rails', '~> 5.0', '>= 5.0.2'
   gem 'factory_bot_rails', '~> 6.2', '>= 6.2.0'
   gem 'dotenv-rails', groups: [:development, :test]
+  gem 'faker', '~> 2.18', '>= 2.18.0'
+  gem 'webmock', '~> 3.13', '>= 3.13.0'
+  gem 'vcr'
 end
 
 group :development do
