@@ -33,8 +33,9 @@ showing them while using the web app.
 the app.
 
 * Ruby version
+
 3.0.0
 
-* How to run the test suite
+* How to run project
 
 ``rails s``
