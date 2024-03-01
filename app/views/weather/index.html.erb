@@ -1,0 +1,16 @@
+<%= form_with url: weather_index_path, method: :get, local: true do |form| %>
+  <%= form.label :city_name, "Enter City Name" %>
+  <%= form.text_field :city_name %>
+  <%= form.submit "Search" %>
+<% end %>
+
+<% if @cities_weather_data.any? %>
+  <% @cities_weather_data.each do |city| %>
+    <div>
+      <h3><%= city[:city_name] %></h3>
+      <!-- Display weather forecast data for each city -->
+    </div>
+  <% end %>
+<% else %>
+  <p>No weather data available.</p>
+<% end %>
